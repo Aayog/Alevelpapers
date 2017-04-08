@@ -35,9 +35,6 @@ tim = raw_input("w or s? ")
 
 for lett in a:
     #print lett
-    if choice  in lett:
-        if qpm in lett:
-            if zone in lett:
-                if tim in lett:
-                    print lett
-                    os.system('start https://www.google.com/search?q={}'.format(lett))
+    if choice  in lett and qpm in lett and zone in lett and tim in lett:
+        print lett
+        os.system('start https://www.google.com/search?q={}'.format(lett))
