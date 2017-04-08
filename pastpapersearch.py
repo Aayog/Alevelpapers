@@ -37,7 +37,7 @@ for lett in a:
     #print lett
     if choice  in lett and qpm in lett and zone in lett and tim in lett:
         print lett
-        if choice =="16":
+        if choice =="16" or choice < "9":
             os.system('start https://www.google.com/search?q={}'.format(lett))
         else:
             os.system('start  http://maxpapers.com/syllabus-materials/physics-9702-a-level/attachment/{}/'.format(lett))
