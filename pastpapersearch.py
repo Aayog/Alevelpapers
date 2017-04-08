@@ -28,7 +28,7 @@ for i in range(2,17):
             x = "s"
         if z == 4:
             x="qp"
-choice=raw_input("What year's past paper you want?(2-16) ")
+choice=raw_input("What year's past paper you want?(9-16) ")
 qpm = raw_input("ms or qp? ")
 zone =raw_input("41, 42 or 43? ")
 tim = raw_input("w or s? ")
@@ -37,7 +37,7 @@ for lett in a:
     #print lett
     if choice  in lett and qpm in lett and zone in lett and tim in lett:
         print lett
-        if choice =="16" or choice < "9":
+        if choice =="16":
             os.system('start https://www.google.com/search?q={}'.format(lett))
         else:
             os.system('start  http://maxpapers.com/syllabus-materials/physics-9702-a-level/attachment/{}/'.format(lett))
